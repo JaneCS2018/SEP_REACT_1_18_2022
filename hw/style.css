@@ -1,11 +1,123 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html, body {
+    height: 100%;
+}
+main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
 form{
-    width: 90%;
-    margin: 10vh auto;
-    
+    width: 50%;
+    min-width: 420px;
 }
 
 .title{
     font-size: 40px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    min-width: 200px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+}
+input{
+    padding: 0.7rem 0.9rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.5rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin:9px 0px;
+   
+}
+
+.input_half{
+    width: 49%;
+    min-width: 200px;
+}
+input[placeholder="Mobile No."],
+input[placeholder="Email Address"]{
+    min-width: 100%;
+}
+
+.des{
+  width: 76%;
+  font-size: 0.8em;
+}
+.des span{
+    background-color: #5589C5;
+    padding:  0.1rem 0.7rem;
+    color: white;
+    border-radius: 4px;
+}
+.des a{
+    text-decoration: none;
+    color: #5589C5;
+}
+
+input[value="Register"]{
+    background-color: #5589C5;
+    color: white;
+    padding: 0.67rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+label[for="agree"]{
+    cursor: pointer;
+}
+input[value="Sign In"]{
+    background-color: #74B666;
+    color: white;
+    cursor: pointer;
+}
+input:focus{
+    outline: none !important;
+    border:1px solid #77ADE4;
+    box-shadow: 0 0 10px #77ADE4;
+}
+
+@media screen and (max-width: 420px){
+    .wrapper{
+        flex-direction: column;
+    }
+    .des{
+        width: 100%;
+        font-size: 0.8em;
+      }
+    form{
+        width: 80%;
+        min-width: 300px;
+    }
+    .checkbox{
+        margin: auto;
+    }
+    .input_half{
+        width: 100%;
+      
+    }
+}
+
+@media screen and (max-width: 320px){
+    form{
+        width: 80%;
+        min-width: 200px;
+       
+    }
+    .input_half{
+        width: 100%;
+      
+    }
 }
