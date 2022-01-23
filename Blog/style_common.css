@@ -1,0 +1,115 @@
+:root{
+    --color-blue:#0077ff;
+    --color-green:#71af64; 
+    --color-darkgreen:#2dc2a9;
+    --color-darkergreen:#25aa94;
+    --color-orange:#eea403;
+    --color-pink:  #fc5765;
+    --color-lightgray:#e6e6e6; 
+    --color-gray:#a5a5a5;
+    --color-darkgray:#595757;
+    --color-purple:#aa00aa;
+}
+
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 2rem auto;
+    justify-content: space-between;
+}
+
+nav{
+    height: 5rem;
+    background: black;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin: 2rem 2rem;  
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+nav ul li a:hover{
+    color:var(--color-orange)
+}
+
+.heading{
+    text-align: center;
+    margin: 5rem auto;
+    font-family: 'Dancing Script', cursive;
+    color:var(--color-darkgreen);
+    font-size:5rem;
+}
+
+
+.card{
+    width: 45rem;
+    padding: 2rem;
+    border-radius: 7px;
+    position: relative;
+    box-shadow: 0 0 5px grey;
+    height: 25rem;
+}
+.card-category{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-blue);
+    margin: 1rem auto;
+}
+.card-date{
+    color: var(--color-gray);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.4rem auto;
+    font-style: italic;
+}
+.card-summary{
+    font-size: 1.4rem;
+    height: auto;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.card-link a{
+    color:var(--color-blue);
+    font-size: 1.3rem;
+    position: absolute;
+    left: 2rem;
+    bottom: 10px;
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: italic;
+}
+.card-link a:hover{
+    color: var(--color-orange);
+}
+.green{
+    color:var(--color-green)
+}
+.pink{
+    color: var(--color-pink)
+}
+.orange{
+    color:var(--color-orange)
+}
+.purple{
+    color:var(--color-purple)
+}
+
+
+

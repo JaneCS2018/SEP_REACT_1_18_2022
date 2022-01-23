@@ -1,0 +1,31 @@
+footer{
+    margin-top: 10rem;
+    background-color: var(--color-darkgray);
+    height: 25rem;
+}
+.social-media{
+   width: 15rem;
+   margin:auto;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom:2rem ;
+}
+.social-media img{
+    filter: brightness(0) invert(1);
+}
+footer p{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+.follow{
+   padding-top: 7rem;
+   padding-bottom: 2rem;
+   font-size: 2rem;
+   font-weight: 300;
+}
+.copyright{
+    width:60%;
+    margin: auto;
+    line-height: 1.7;
+}
