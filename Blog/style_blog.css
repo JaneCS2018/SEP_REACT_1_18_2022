@@ -38,7 +38,7 @@ aside p{
     width: 90%;
     margin: auto;
     grid-template-columns: 60% auto;
-    grid-template-rows: 12% 28% auto;
+    grid-template-rows: 12% 35% auto;
 }
 .container-main{
     grid-column: 1/1;
@@ -149,7 +149,7 @@ aside p{
         width: 90%;
         margin: auto;
         grid-template-columns: 100%;
-        grid-template-rows: 85% 7% 7% auto;
+        grid-template-rows: 85% 9% 7% auto;
     }
     .container-main{
         grid-column: auto;
